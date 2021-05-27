@@ -1,7 +1,7 @@
-import SpendItem from "./components/SpendItem";
+import Cheltuieli from "./components/Cheltuieli";
 
 function App() {
-  const cheltuieli = [
+  const iteme = [
     {
       id: "e1",
       title: "Toilet Paper",
@@ -26,26 +26,7 @@ function App() {
   return (
     <div>
       <h2>Let's get started!</h2>
-      <SpendItem
-        title={cheltuieli[0].title}
-        pret={cheltuieli[0].amount}
-        date={cheltuieli[0].date}
-      />
-      <SpendItem
-        title={cheltuieli[1].title}
-        pret={cheltuieli[1].amount}
-        date={cheltuieli[1].date}
-      />
-      <SpendItem
-        title={cheltuieli[2].title}
-        pret={cheltuieli[2].amount}
-        date={cheltuieli[2].date}
-      />
-      <SpendItem
-        title={cheltuieli[3].title}
-        pret={cheltuieli[3].amount}
-        date={cheltuieli[3].date}
-      />
+      <Cheltuieli items={iteme} />{" "}
     </div>
   );
 }
