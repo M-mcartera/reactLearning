@@ -30,22 +30,22 @@ function App() {
         title={cheltuieli[0].title}
         pret={cheltuieli[0].amount}
         date={cheltuieli[0].date}
-      ></SpendItem>
+      />
       <SpendItem
         title={cheltuieli[1].title}
         pret={cheltuieli[1].amount}
         date={cheltuieli[1].date}
-      ></SpendItem>
+      />
       <SpendItem
         title={cheltuieli[2].title}
         pret={cheltuieli[2].amount}
         date={cheltuieli[2].date}
-      ></SpendItem>
+      />
       <SpendItem
         title={cheltuieli[3].title}
         pret={cheltuieli[3].amount}
         date={cheltuieli[3].date}
-      ></SpendItem>
+      />
     </div>
   );
 }
