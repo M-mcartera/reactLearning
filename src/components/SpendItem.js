@@ -1,12 +1,12 @@
 import "./SpendItem.css";
 
-function SpendItem() {
+function SpendItem(props) {
   return (
     <div className="spend-item">
-      <div>28 Martie, 2021</div>
+      <div>{props.date.toISOString()}</div>
       <div className="spend-item__description">
-        <h2>Asigurare Medicala</h2>
-        <div className="spend-item__price">350 RON</div>
+        <h2>{props.title}</h2>
+        <div className="spend-item__price">{props.pret} RON</div>
       </div>
     </div>
   );
