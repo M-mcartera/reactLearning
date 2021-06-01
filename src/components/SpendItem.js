@@ -1,3 +1,4 @@
+import React from 'react';
 import "./SpendItem.css";
 import SpendDate from "./SpendDate";
 import Card from "./Card";

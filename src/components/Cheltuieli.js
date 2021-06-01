@@ -1,3 +1,4 @@
+import React from 'react';
 import SpendItem from "./SpendItem";
 import Card from "./Card";
 import "./Cheltuieli.css";
