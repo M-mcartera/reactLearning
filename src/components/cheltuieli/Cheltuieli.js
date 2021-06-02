@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import SpendItem from "./SpendItem";
-import Card from "./Card";
+import Card from "../generalUI/Card";
 import "./Cheltuieli.css";
-function Cheltuieli(props) {
+const Cheltuieli = (props) => {
   return (
     <Card className="cheltuieli">
       <SpendItem
@@ -27,6 +27,6 @@ function Cheltuieli(props) {
       />
     </Card>
   );
-}
+};
 
 export default Cheltuieli;

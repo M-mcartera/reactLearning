@@ -1,9 +1,9 @@
 import React from 'react';
 import "./SpendItem.css";
 import SpendDate from "./SpendDate";
-import Card from "./Card";
+import Card from "../generalUI/Card";
 
-function SpendItem(props) {
+const SpendItem = (props) => {
   return (
     <Card className="spend-item">
         <SpendDate date={props.date}/>
@@ -11,6 +11,7 @@ function SpendItem(props) {
         <h2>{props.title}</h2>
         <div className="spend-item__price">{props.pret} RON</div>
       </div>
+      <button>Change Title</button>
     </Card>
   );
 }
