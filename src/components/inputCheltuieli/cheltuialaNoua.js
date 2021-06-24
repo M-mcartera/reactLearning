@@ -4,14 +4,13 @@ import "./cheltuialaNoua.css";
 import Form from "./form";
 
 
-const cheltuialaNoua = () =>{
+const cheltuialaNoua = (props) =>{
 const saveInputItemHandler = (inputItem) => {
     const item = {
         ...inputItem,
         id: Math.random().toString(),
     };
-
-    console.log(item);
+    props.addItem(item);
 };
 
 return(

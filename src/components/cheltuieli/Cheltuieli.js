@@ -1,10 +1,17 @@
-import React from "react";
+import React, {useState} from "react";
 import SpendItem from "./SpendItem";
 import Card from "../generalUI/Card";
+import ExpensesFilter from "./ExpensesFilter";
+
 import "./Cheltuieli.css";
 const Cheltuieli = (props) => {
+  const [filteredYear, setfilteredYear] = useState('2021');
+  const saveFilterHandler = filter =>{
+    setfilteredYear(filter);
+  }
   return (
     <Card className="cheltuieli">
+      <ExpensesFilter onSaveFilter={saveFilterHandler} selectedYear={filteredYear}/>
       <SpendItem
         title={props.items[0].title}
         pret={props.items[0].amount}
