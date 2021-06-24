@@ -1,4 +1,5 @@
 import Cheltuieli from "./components/cheltuieli/Cheltuieli";
+import CheltuialaNoua from  "./components/inputCheltuieli/cheltuialaNoua";
 
 const App = () => {
   const iteme = [
@@ -26,6 +27,7 @@ const App = () => {
   return (
     <div>
       <Cheltuieli items={iteme} />
+      <CheltuialaNoua />
     </div>
   );
 }
