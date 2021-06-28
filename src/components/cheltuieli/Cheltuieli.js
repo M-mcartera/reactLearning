@@ -12,7 +12,7 @@ const Cheltuieli = (props) => {
   return (
     <Card className="cheltuieli">
       <ExpensesFilter onSaveFilter={saveFilterHandler} selectedYear={filteredYear} />
-      {props.items.map(item => <SpendItem title={item.title} pret={item.amount} date={item.date} />)}
+      {props.items.map(item => <SpendItem key={item.id} title={item.title} pret={item.amount} date={item.date} />)}
     </Card>
   );
 };
